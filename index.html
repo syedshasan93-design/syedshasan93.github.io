@@ -2,17 +2,89 @@
 <html>
 <head>
     <title>My Portfolio</title>
+
+    <style>
+        body {
+            background: linear-gradient(to right, #0f172a, #1e293b);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+
+        .container {
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #cbd5f5;
+            font-size: 18px;
+        }
+
+        .projects {
+            margin-top: 40px;
+        }
+
+        .card {
+            background: #334155;
+            margin: 15px auto;
+            padding: 20px;
+            width: 250px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            background: #475569;
+            transform: scale(1.05);
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            border: none;
+            background: #38bdf8;
+            color: black;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0ea5e9;
+        }
+    </style>
+
 </head>
+
 <body>
 
-    <h1>Hi, I'm Syed Sibte Hasan 👋</h1>
-    <p>I am learning Python and building projects.</p>
+    <div class="container">
+        <h1>Hi, I'm Ahmed 👋</h1>
+        <p>Python Learner | Future Developer 🚀</p>
 
-    <h2>My Projects</h2>
-    <ul>
-        <li>Cricket Game 🎮</li>
-        <li>More coming soon...</li>
-    </ul>
+        <div class="projects">
+            <h2>My Projects</h2>
+
+            <div class="card">
+                <h3>Cricket Game 🎮</h3>
+                <p>Beginner OOP based cricket game</p>
+            </div>
+
+            <div class="card">
+                <h3>More Coming Soon...</h3>
+            </div>
+        </div>
+
+        <button onclick="alert('Contact coming soon!')">
+            Contact Me
+        </button>
+    </div>
 
 </body>
 </html>
