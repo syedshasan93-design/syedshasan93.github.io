@@ -1,90 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Portfolio</title>
+    <title>Portfolio - Syed SibteHasan</title>
 
     <style>
         body {
             margin: 0;
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
+            background: #0b1220;
             color: white;
-
-            /* Gradient + texture feel */
-            background: radial-gradient(circle at top, #1e3a8a, #0f172a 60%);
         }
 
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 60px 20px;
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background: rgba(255,255,255,0.05);
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(10px);
         }
 
-        h1 {
-            font-size: 48px;
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
             margin-bottom: 10px;
-            letter-spacing: 1px;
         }
 
-        p {
+        .hero p {
             color: #cbd5e1;
             font-size: 18px;
         }
 
-        .tag {
-            display: inline-block;
-            background: rgba(255,255,255,0.1);
-            padding: 8px 15px;
-            border-radius: 20px;
-            margin-top: 10px;
-            font-size: 14px;
+        .hero img {
+            width: 140px;
+            border-radius: 50%;
+            margin-top: 20px;
+            border: 3px solid #38bdf8;
         }
 
+        /* SECTIONS */
         .section {
-            margin-top: 50px;
+            padding: 60px 20px;
+            text-align: center;
         }
 
-        .grid {
+        .section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        /* PROJECTS */
+        .projects {
             display: flex;
-            gap: 20px;
             justify-content: center;
             flex-wrap: wrap;
+            gap: 20px;
         }
 
         .card {
-            background: rgba(255,255,255,0.08);
-            border: 1px solid rgba(255,255,255,0.15);
+            background: rgba(255,255,255,0.06);
             padding: 20px;
-            width: 250px;
-            border-radius: 15px;
-
-            backdrop-filter: blur(10px);
+            width: 280px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.1);
             transition: 0.3s;
         }
 
         .card:hover {
-            transform: translateY(-8px);
-            background: rgba(255,255,255,0.12);
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.1);
         }
 
-        button {
-            margin-top: 40px;
+        /* BUTTON */
+        .btn {
             padding: 12px 25px;
-            border: none;
-            border-radius: 10px;
             background: #38bdf8;
-            color: black;
-            font-size: 16px;
+            border: none;
+            border-radius: 8px;
             cursor: pointer;
-            transition: 0.3s;
+            margin-top: 20px;
         }
 
-        button:hover {
+        .btn:hover {
             background: #0ea5e9;
-            transform: scale(1.05);
         }
 
+        /* FOOTER */
         footer {
-            margin-top: 60px;
+            text-align: center;
+            padding: 30px;
             color: #94a3b8;
             font-size: 14px;
         }
@@ -95,41 +113,56 @@
 
 <body>
 
-    <div class="container">
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div><b>Portfolio</b></div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+        </div>
+    </div>
 
-        <h1>Hi, I'm Ahmed 👋</h1>
-        <p>Python Learner | Future Developer 🚀</p>
+    <!-- HERO -->
+    <div class="hero" id="home">
+        <h1>Hi, I'm Syed Sibte Hasan 👋</h1>
+        <p>Python Developer | OOP Learner | Future Software Engineer 🚀</p>
 
-        <div class="tag">OOP Python</div>
-        <div class="tag">Beginner Developer</div>
+        <!-- developer image style -->
+        <img src="https://cdn-icons-png.flaticon.com/512/1006/1006363.png" />
+    </div>
 
-        <div class="section">
-            <h2>My Projects</h2>
+    <!-- PROJECTS -->
+    <div class="section" id="projects">
+        <h2>My Projects</h2>
 
-            <div class="grid">
+        <div class="projects">
 
-                <div class="card">
-                    <h3>🏏 Cricket Game</h3>
-                    <p>OOP based beginner cricket simulation game</p>
-                </div>
-
-                <div class="card">
-                    <h3>💻 More Projects</h3>
-                    <p>Coming soon with GitHub uploads</p>
-                </div>
-
+            <div class="card">
+                <h3>🏏 Cricket Game</h3>
+                <p>Beginner OOP based cricket simulation game in Python</p>
             </div>
+
+            <div class="card">
+                <h3>💻 GitHub Portfolio</h3>
+                <p>All projects uploaded and maintained on GitHub</p>
+            </div>
+
+            <div class="card">
+                <h3>🚀 More Coming</h3>
+                <p>Web apps and advanced Python projects</p>
+            </div>
+
         </div>
 
-        <button onclick="alert('Contact feature coming soon!')">
+        <button class="btn" onclick="alert('Contact coming soon!')">
             Contact Me
         </button>
-
-        <footer>
-            © 2026 My Portfolio | Built with HTML & CSS
-        </footer>
-
     </div>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Syed Sibte Hasan | Built with HTML & CSS
+    </footer>
 
 </body>
 </html>
