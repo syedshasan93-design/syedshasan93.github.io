@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Portfolio - Syed SibteHasan</title>
+    <title>Portfolio - Syed Sibte Hasan</title>
 
     <style>
         body {
@@ -63,7 +63,7 @@
             margin-bottom: 30px;
         }
 
-        /* PROJECTS */
+        /* PROJECTS GRID */
         .projects {
             display: flex;
             justify-content: center;
@@ -83,6 +83,19 @@
         .card:hover {
             transform: translateY(-10px);
             background: rgba(255,255,255,0.1);
+        }
+
+        /* LINK STYLE */
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            color: #0ea5e9;
         }
 
         /* BUTTON */
@@ -127,7 +140,6 @@
         <h1>Hi, I'm Syed Sibte Hasan 👋</h1>
         <p>Python Developer | OOP Learner | Future Software Engineer 🚀</p>
 
-        <!-- developer image style -->
         <img src="https://cdn-icons-png.flaticon.com/512/1006/1006363.png" />
     </div>
 
@@ -137,19 +149,20 @@
 
         <div class="projects">
 
+            <!-- CRICKET GAME PROJECT (ADDED) -->
             <div class="card">
                 <h3>🏏 Cricket Game</h3>
-                <p>Beginner OOP based cricket simulation game in Python</p>
+                <p>Beginner level Python OOP cricket game with toss, overs, scoring and random outs.</p>
+
+                <a href="https://github.com/your-username/cricket-game" target="_blank">
+                    View Code on GitHub
+                </a>
             </div>
 
+            <!-- OTHER PROJECT -->
             <div class="card">
-                <h3>💻 GitHub Portfolio</h3>
-                <p>All projects uploaded and maintained on GitHub</p>
-            </div>
-
-            <div class="card">
-                <h3>🚀 More Coming</h3>
-                <p>Web apps and advanced Python projects</p>
+                <h3>💻 More Projects</h3>
+                <p>More Python and web projects coming soon...</p>
             </div>
 
         </div>
